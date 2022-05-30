@@ -99,11 +99,7 @@ const MainListItems = (props) => {
         icon={<WhatsAppIcon />}
       />
 
-      <ListItemLink
-        to="/contacts"
-        primary={i18n.t("mainDrawer.listItems.contacts")}
-        icon={<ContactPhoneOutlinedIcon />}
-      />
+     
       <ListItemLink
         to="/quickAnswers"
         primary={i18n.t("mainDrawer.listItems.quickAnswers")}
@@ -129,6 +125,20 @@ const MainListItems = (props) => {
               {i18n.t("mainDrawer.listItems.administration")}
             </ListSubheader>
             <ListItemLink
+			 to="/connections"
+        primary={i18n.t("mainDrawer.listItems.connections")}
+        icon={
+          <Badge badgeContent={connectionWarning ? "!" : 0} color="error">
+            <SyncAltIcon />
+          </Badge>
+        }
+      />
+	   <ListItemLink
+        to="/contacts"
+        primary={i18n.t("mainDrawer.listItems.contacts")}
+        icon={<ContactPhoneOutlinedIcon />}
+      />
+	  <ListItemLink
               to="/users"
               primary={i18n.t("mainDrawer.listItems.users")}
               icon={<PeopleAltOutlinedIcon />}
@@ -144,23 +154,7 @@ const MainListItems = (props) => {
               primary={i18n.t("mainDrawer.listItems.settings")}
               icon={<SettingsOutlinedIcon />}
             />
-          <Divider />
-            <ListSubheader inset>
-              {i18n.t("mainDrawer.listItems.api")}
-            </ListSubheader>
-       
-           <ListItemLink
-              to="/tokens"
-              primary={i18n.t("mainDrawer.listItems.tokens")}
-              icon={<VpnKeyIcon />}
-            />
-
-            <ListItemLink
-              to="/docs"
-              primary={i18n.t("mainDrawer.listItems.docs")}
-              icon={<MenuBookIcon />}
-            />
-
+          
 
 
 
