@@ -217,7 +217,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            Nome da Empresa
+            Agencia Prerio
           </Typography>
           {user.id && <NotificationsPopOver />}
 
