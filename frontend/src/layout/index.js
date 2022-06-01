@@ -217,7 +217,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            SocialInsta
+            Nome da Empresa
           </Typography>
           {user.id && <NotificationsPopOver />}
 
