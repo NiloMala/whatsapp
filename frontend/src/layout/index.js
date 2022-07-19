@@ -217,7 +217,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            Agencia Prerio
+            Zap-Chat
           </Typography>
           {user.id && <NotificationsPopOver />}
 
